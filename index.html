@@ -74,6 +74,9 @@
       background-color: #ffb600;
       border: none;
       color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
     .weunderstand {
       background-color: #272d33;
@@ -96,11 +99,9 @@
     .newsletter_sec .input_wrapper {
       width: 60%;
     }
-    .carousel-item{
-      height: 38rem;
-    }
-    .nav-link{
-      color: #000!important;
+
+    .nav-link {
+      color: #000 !important;
       font-weight: 500;
     }
     /* Animation */
@@ -248,11 +249,11 @@
             aria-label="Slide 3"
           ></button>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item">
+        <div class="carousel-inner" style="height: 38rem;">
+          <div class="carousel-item " style="height: 100%;">
             <div class="over_lay"></div>
             <img src="./Img/hero_bg.jpg" class="d-block w-100 kenburns-top" alt="..." />
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption d-none d-md-block w-50 m-auto">
               <h5 class="text-start">Application Development</h5>
               <p class="text-start">
                 VibrantCube as a Software development company gives absolute
@@ -271,13 +272,13 @@
               </div>
             </div>
           </div>
-          <div class="carousel-item active">
+          <div class="carousel-item  active" style="height: 100%;">
             <img
               src="./Img/about_slider1.jpg"
               class="d-block w-100 kenburns-top"
               alt="..."
             />
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption d-none d-md-block w-50 m-auto">
               <h5 class="text-start">Mobile Application Development</h5>
               <p class="text-start">
                 VibrantCube design and develop apps for most major mobile
@@ -310,13 +311,13 @@
               </div>
             </div>
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item " style="height: 100%;">
             <img
               src="./Img/about_slider2.jpg"
               class="d-block w-100 kenburns-top"
               alt="..."
             />
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption d-none d-md-block w-50 m-auto">
               <h5 class="text-start">CMS Development</h5>
               <p class="text-start">
                 Virtual tech Vibes as a Software development company gives
@@ -391,9 +392,9 @@
           <div class="col-12 col-xl-6 col-lg-5 col-md-5">
             <h6 class="text-white">WE UNDERSTAND YOUR NEEDS ON WEBSITES</h6>
           </div>
-          <div class="col-12 col-xl-3 col-lg-3 col-md-3 text-end">
+          <div class="col-12 col-xl-3 col-lg-3 col-md-3 d-flex justify-content-end">
             <button
-              class="request_btn pt-xl-2 py-xl-3 py-lg-2 py-md-1 py-1 px-xl-3 px-lg-3 px-md-3 px-2 rounded"
+              class="request_btn p-3 rounded"
             >
               REQUEST QUOES
             </button>
@@ -496,7 +497,7 @@
     </section>
 
     <section class="newsletter_sec">
-      <div class="container-fluid">
+      <div class="container">
         <div class="row">
           <div
             class="col-12 col-xl-4 col-lg-4 col-md-6 yello_bg p-xl-3 p-lg-3 p-md-2 p-2"
