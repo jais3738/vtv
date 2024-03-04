@@ -17,12 +17,38 @@
   </head>
   <style>
     .highlight {
-      color: #ffb600;
+      color: #003cff;
       font-weight: bold;
     }
     .carousel-caption {
-      background-color:transparent;
+      background-color: transparent;
       padding: 2rem 3rem;
+      /* top: 33%; */
+      transform: translate(39%, -6%);
+      position: absolute;
+      top: 25%;
+      right: 23%;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+    .carousel-inner {
+      height: 38rem;
+    }
+
+    .border_white {
+      border: 2px solid #fff;
+    }
+    .border_white:hover {
+      border: 2px solid #003cff;
+    }
+    .border_white:hover.carousel-caption {
+      background: #1e1717bf;
+    }
+    .border_white:hover .slider_heading {
+      color: #fff;
+    }
+    .slider_heading {
+      color: #003cff;
     }
 
     .hero_sec {
@@ -42,7 +68,7 @@
     }
     .hero_sec button {
       border: none;
-      background-color: #ffb600;
+      background-color: #003cff;
       color: #fff;
       font-weight: 500;
     }
@@ -55,7 +81,7 @@
     .line {
       width: 90%;
       height: 0.1rem;
-      background-color: #ffb600;
+      background-color: #003cff;
       border-radius: 15px;
       display: flex;
       justify-content: center;
@@ -71,7 +97,7 @@
       width: 150px;
     }
     .request_btn {
-      background-color: #ffb600;
+      background-color: #003cff;
       border: none;
       color: #fff;
       display: flex;
@@ -86,7 +112,7 @@
       border-radius: 50px;
     }
     .yello_bg {
-      background: #ffb600;
+      background: #003cff;
     }
     .black_bg {
       background: #252525;
@@ -116,66 +142,105 @@
  * w: http://animista.net, t: @cssanimista
  * ---------------------------------------------- */
 
-/**
+    /**
  * ----------------------------------------
  * animation kenburns-top
  * ----------------------------------------
  */
-@-webkit-keyframes kenburns-top {
-  0% {
-    -webkit-transform: scale(1) translateY(0);
-            transform: scale(1) translateY(0);
-    -webkit-transform-origin: 50% 16%;
-            transform-origin: 50% 16%;
-  }
-  100% {
-    -webkit-transform: scale(1.25) translateY(-15px);
-            transform: scale(1.25) translateY(-15px);
-    -webkit-transform-origin: top;
-            transform-origin: top;
-  }
-}
-@keyframes kenburns-top {
-  0% {
-    -webkit-transform: scale(1) translateY(0);
-            transform: scale(1) translateY(0);
-    -webkit-transform-origin: 50% 16%;
-            transform-origin: 50% 16%;
-  }
-  100% {
-    -webkit-transform: scale(1.25) translateY(-15px);
-            transform: scale(1.25) translateY(-15px);
-    -webkit-transform-origin: top;
-            transform-origin: top;
-  }
-}
+    @-webkit-keyframes kenburns-top {
+      0% {
+        -webkit-transform: scale(1) translateY(0);
+        transform: scale(1) translateY(0);
+        -webkit-transform-origin: 50% 16%;
+        transform-origin: 50% 16%;
+      }
+      100% {
+        -webkit-transform: scale(1.25) translateY(-15px);
+        transform: scale(1.25) translateY(-15px);
+        -webkit-transform-origin: top;
+        transform-origin: top;
+      }
+    }
+    @keyframes kenburns-top {
+      0% {
+        -webkit-transform: scale(1) translateY(0);
+        transform: scale(1) translateY(0);
+        -webkit-transform-origin: 50% 16%;
+        transform-origin: 50% 16%;
+      }
+      100% {
+        -webkit-transform: scale(1.25) translateY(-15px);
+        transform: scale(1.25) translateY(-15px);
+        -webkit-transform-origin: top;
+        transform-origin: top;
+      }
+    }
 
-@media screen and (max-width: 768px) {
-  .carousel-item{
-      height: 25rem;
+    @media screen and (max-width: 770px) {
+      .carousel-item {
+        height: 25rem;
+      }
+      .carousel-inner {
+        height: 32rem;
+      }
+      .carousel-caption {
+        background-color: transparent;
+        padding: 2rem 3rem;
+        /* top: 33%; */
+        transform: translate(39%, -6%);
+        position: absolute;
+        top: 25%;
+        right: 23%;
+        height: auto;
+        transition: 0.3s;
+        height: 25rem;
+        cursor: pointer;
+      }
     }
-}
-@media screen and (max-width: 430px) {
-  .carousel-item{
-      height: 15rem;
+    @media screen and (max-width: 430px) {
+      .carousel-item {
+        height: 15rem;
+      }
+      .carousel-inner {
+        height: 16rem;
+      }
+      .request_btn {
+        width: 100%;
+      }
     }
-}
-@media screen and (max-width: 414px) {
-  .carousel-item{
-      height: 15rem;
+    @media screen and (max-width: 414px) {
+      .carousel-item {
+        height: 15rem;
+      }
+      .carousel-inner {
+        height: 16rem;
+      }
+      .request_btn {
+        width: 100%;
+      }
     }
-}
-@media screen and (max-width: 390px) {
-  .carousel-item{
-      height: 15rem;
+    @media screen and (max-width: 390px) {
+      .carousel-item {
+        height: 15rem;
+      }
+      .carousel-inner {
+        height: 16rem;
+      }
+      .request_btn {
+        width: 100%;
+      }
     }
-}
-@media screen and (max-width: 280px) {
-  .carousel-item{
-      height: 12rem;
+    @media screen and (max-width: 280px) {
+      .carousel-item {
+        height: 12rem;
+      }
+      .carousel-inner {
+        height: 11rem;
+      }
+      .request_btn {
+        width: 100%;
+      }
     }
-}
-
   </style>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white">
@@ -249,7 +314,7 @@
             aria-label="Slide 3"
           ></button>
         </div>
-        <div class="carousel-inner" style="height: 38rem;">
+        <div class="carousel-inner">
           <!-- <div class="carousel-item " style="height: 100%;">
             <div class="over_lay"></div>
             <img src="./Img/hero_bg.jpg" class="d-block w-100 kenburns-top" alt="..." />
@@ -272,19 +337,24 @@
               </div>
             </div>
           </div> -->
-          <div class="carousel-item  active" style="height: 100%;">
-            <img
-              src="./Img/about_slider1.jpg"
-              class="d-block w-100 kenburns-top"
-              alt="..."
-            />
-            <div class="carousel-caption d-none d-md-block w-50 m-auto">
-              <h5 class="text-start highlight fs-lg-1 fs-md-2 fs-xl-1">Mobile Application Development</h5>
-              <p class="text-start">
-                VibrantCube design and develop apps for most major mobile
-                platforms.vbhmbmbhvbvbvvgbnjgvjn
+          <div class="carousel-item active" style="height: 100%">
+            <img src="./Img/home_slider1.jpg" class="d-block w-100" alt="..." />
+            <div
+              class="carousel-caption d-none d-md-block w-auto m-auto border_white"
+            >
+              <h1 class="text-start fw-bold slider_heading">
+                Mobile Application <br />
+                Development
+              </h1>
+              <p
+                class="text-start text-white w-100 fs-5 pt-xl-4 pt-lg-4 pt-md-3 pt-3 mb-0"
+              >
+                Mobile operation development involves creating software
+                operations that run on mobile bias similar as smartphones and
+                tablets. Then are the crucial aspects and technologies involved
+                in mobile app development
               </p>
-              <div class="row">
+              <div class="row pt-xl-5 pt-lg-4 pt-md-3 pt-2">
                 <div class="col-12 col-xl-4 col-lg-4 col-md-4">
                   <div class="d-flex justify-content-center align-items-center">
                     <img src="./Img/ios_vtv.png" width="40px" alt="applelogo" />
@@ -293,7 +363,7 @@
                 <div class="col-12 col-xl-4 col-lg-4 col-md-4">
                   <div class="d-flex justify-content-center align-items-center">
                     <img
-                      src="./Img/andord_vtv.png"
+                      src="./Img/Android_logo-.png"
                       width="50px"
                       alt="applelogo"
                     />
@@ -302,8 +372,8 @@
                 <div class="col-12 col-xl-4 col-lg-4 col-md-4">
                   <div class="d-flex justify-content-center align-items-center">
                     <img
-                      src="./Img/ipad_vtv.png"
-                      width="70px"
+                      src="./Img/apple_white.png"
+                      width="50px"
                       alt="applelogo"
                     />
                   </div>
@@ -337,7 +407,7 @@
             </div>
           </div> -->
         </div>
-        <button
+        <!-- <button
           class="carousel-control-prev"
           type="button"
           data-bs-target="#carouselExampleCaptions"
@@ -354,7 +424,7 @@
         >
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
-        </button>
+        </button> -->
       </div>
     </section>
 
@@ -389,15 +459,13 @@
     <section class="weunderstand">
       <div class="container">
         <div class="row d-flex justify-content-between align-items-center">
-          <div class="col-12 col-xl-6 col-lg-5 col-md-5">
+          <div class="col-12 col-xl-6 col-lg-5 col-md-12">
             <h6 class="text-white">WE UNDERSTAND YOUR NEEDS ON WEBSITES</h6>
           </div>
-          <div class="col-12 col-xl-3 col-lg-3 col-md-3 d-flex justify-content-end">
-            <button
-              class="request_btn p-3 rounded"
-            >
-              REQUEST QUOES
-            </button>
+          <div
+            class="col-12 col-xl-3 col-lg-3 col-md-12 d-flex justify-content-end"
+          >
+            <button class="request_btn p-3 rounded w-100">REQUEST QUOES</button>
           </div>
         </div>
       </div>
@@ -500,31 +568,23 @@
       <div class="container">
         <div class="row">
           <div
-            class="col-12 col-xl-4 col-lg-4 col-md-6 yello_bg p-xl-3 p-lg-3 p-md-2 p-2"
+            class="col-12 col-xl-4 col-lg-4 col-md-12 black_bg p-xl-3 p-lg-3 p-md-2 p-2 "
           >
-            <div>
-              <h5 class="text-center fw-bold">Can we help?</h5>
-              <p class="text-center text-white fw-bold fs-4">+91-8984275488</p>
-            </div>
-          </div>
-          <div
-            class="col-12 col-xl-8 col-lg-8 col-md-6 black_bg p-xl-3 p-lg-3 p-md-2 p-2 d-flex justify-content-around aligh-items-center flex-wrap"
-          >
-            <div class="p-0">
+            <div class="ps-3 pt-2">
               <p class="text-start text-white fw-bold fs-4">
                 NEWSLETTER SIGN-UP <br />
                 <span class="fw-normal fs-6">Latest updates and news</span>
               </p>
             </div>
-            <div class="input_wrapper">
-              <input
-                class="p-xl-2 p-lg-2 p-md-2 p-1"
-                placeholder="Please enter email"
-                type="text"
-                name=""
-                id=""
-              />
-            </div>
+          </div>
+
+          <div class="col-xl-8 col-lg-8 col-md-12 col-12 black_bg d-flex justify-content-between aligh-items-center p-3 gap-1 pe-xl-5 pe-lg-5 pe-md-4 pe-4 pt-4">
+     
+           <div class="d-flex flex-wrap w-100 justify-content-end">
+            <div class="mb-3 w-100"><input class="form-control form-control-lg" placeholder="Enter Email" required=""></div>
+            <div class="mb-3 "><button class="btn btn-primary" name="submit" style="border-style: none;background: #003cff;color: #fff;">Subscribe </button></div>
+           </div>
+        
           </div>
         </div>
       </div>
@@ -539,7 +599,7 @@
               class="carousel slide"
               data-bs-ride="carousel"
             >
-              <div class="carousel-inner">
+              <div class="carousel-inner h-50">
                 <div class="carousel-item active">
                   <h4 class="py-2">Testimonials</h4>
                   <img src="./Img/left.png" width="30px" alt="" />
@@ -716,21 +776,14 @@
       </div>
     </footer>
     <section
-      class="copyright_sec py-xl-3 py-lg-3 py-md-3 py-2 px-xl-2 px-lg-2 px-md-2 py-1"
+      class=" py-xl-1 py-lg-3 py-md-3 py-2 px-xl-2 px-lg-2 px-md-2 py-1"
     >
       <div class="container">
         <div class="row d-flex justify-content-between">
-          <div class="col-12 col-xl-5 col-lg-5 col-md-5">
+          <div class="col-12">
             <p class="text-center">
               Copyright © 2023, Designed & Developed by Virtualtechvibes
             </p>
-          </div>
-          <div class="col-12 col-xl-5 col-lg-5 col-md-5">
-            <div class="row">
-              <div class="col-4 text-end">Home</div>
-              <div class="col-4 text-end">Home</div>
-              <div class="col-4 text-end">Home</div>
-            </div>
           </div>
         </div>
       </div>
