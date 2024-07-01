@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+h2 {
+  color: #1866a7;
+  font-weight: 600;
+}
+
+/* Top social bar */
+.social_links{
+    background-color: #1866a7;
+}
+
+/* nav bar */
+.bg-body-tertiary {
+  --bs-bg-opacity: 1;
+  background-color: #fff !important;
+  box-shadow: 2px -6px 16px 0px black;
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: red;
+}
+.nav-link {
+  display: block;
+  font-weight: 600;
+  padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+  font-size: var(--bs-nav-link-font-size);
+
+  color: #1866a7;
+  text-decoration: none;
+  background: 0 0;
+  border: 0;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
+}
+.nav-link:hover {
+  color: #1866a7 !important;
+}
+
+/* slider */
+.carousel-inner {
+  height: 45rem;
+}
+.slider_1 {
+  background-image: url(../images/slider_img1.jpg);
+  width: 100%;
+  height: 45rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.slider_2 {
+  background-image: url(../images/slider_img2.jpg);
+  width: 100%;
+  height: 45rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.slider_3 {
+  background-image: url(../images/slider_img3.jpg);
+  width: 100%;
+  height: 45rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* cards */
+
+.card_1 {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: 1px 3px 7px 0px #00000052;
+  transition: 0.5s;
+}
+.card_1:hover {
+  background-color: #1866a7;
+}
+.card_1:hover p {
+  color: #fff !important;
+}
+.card_1 p {
+  color: #1866a7 !important;
+  font-weight: 600;
+}
+
+/* About us */
+.about_sec p {
+  text-indent: 50px;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.footer_vtv{
+    background-color: #002141 !important;
+}
+hr{
+    color: #fff;
+}
+
+.footer_vtv p{
+    font-size: 13px;
+    line-height: 22px;
+}
+.copy_right_sec{
+    background-color: #ff0000cc;
+}
+
+/*  */
+#backtotop {
+    position: fixed;
+    /* position: sticky; */
+    top: 89%;
+    right: 1rem;
+    display: none;
+}
+.industrie{
+    border: 1px solid #1866a782;
+}
+
+.industrie p{
+    color: #1866a7;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .carousel-inner {
+        height: 30rem;
+      }
+
+      .slider_1 {
+      
+        height: 30rem;
+       
+      }
+      .slider_2 {
+      
+        height: 30rem;
+       
+      }
+      .slider_3 {
+      
+        height: 28rem;
+       
+      }
+}
